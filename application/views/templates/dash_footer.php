@@ -1,22 +1,17 @@
 <div class="footer-copyright-area">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-				<div class="footer-copy-right">
-					<p>Copyright © 2018. All rights reserved. Template by <a href="https://colorlib.com/wp/templates/">Colorlib</a></p>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2020. DINAS PENDIDIKAN DAN KEBUDAYAAN KAB.CILACAP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- jquery
-		============================================ -->
-<script src="<?= base_url('assets/kiaalap/'); ?>js/vendor/jquery-1.12.4.min.js"></script>
-<!-- bootstrap JS
-		============================================ -->
-<script src="<?= base_url('assets/kiaalap/'); ?>js/bootstrap.min.js"></script>
+
 <!-- wow JS
 		============================================ -->
 <script src="<?= base_url('assets/kiaalap/'); ?>js/wow.min.js"></script>
@@ -58,9 +53,6 @@
 <!-- main JS
 		============================================ -->
 <script src="<?= base_url('assets/kiaalap/'); ?>js/main.js"></script>
-<!-- tawk chat JS
-		============================================ -->
-<script src="js/tawk-chat.js"></script>
 </body>
 
 </html>
