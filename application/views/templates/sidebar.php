@@ -8,7 +8,7 @@
             <nav class="sidebar-nav left-sidebar-menu-pro">
                 <ul class="metismenu" id="menu1">
                     <li>
-                        <a class="" href="index.html">
+                        <a class="" href="<?= base_url(); ?>user/dashboard">
                             <span class="educate-icon educate-home icon-wrap"></span>
                             <span class="mini-click-non">Beranda</span>
                         </a>

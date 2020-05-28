@@ -53,8 +53,18 @@
 		============================================ -->
     <link rel="stylesheet" href="<?= base_url('assets/kiaalap/'); ?>css/calendar/fullcalendar.min.css">
     <link rel="stylesheet" href="<?= base_url('assets/kiaalap/'); ?>css/calendar/fullcalendar.print.min.css">
-    <!-- style CSS
+    <!-- x-editor CSS
 		============================================ -->
+    <link rel="stylesheet" href="<?= base_url('assets/kiaalap/'); ?>css/editor/select2.css">
+    <link rel="stylesheet" href="<?= base_url('assets/kiaalap/'); ?>css/editor/datetimepicker.css">
+    <link rel="stylesheet" href="<?= base_url('assets/kiaalap/'); ?>css/editor/bootstrap-editable.css">
+    <link rel="stylesheet" href="<?= base_url('assets/kiaalap/'); ?>css/editor/x-editor-style.css">
+    <!-- normalize CSS
+    ============================================ -->
+    <link rel="stylesheet" href="<?= base_url('assets/kiaalap/'); ?>css/data-table/bootstrap-table.css">
+    <link rel="stylesheet" href="<?= base_url('assets/kiaalap/'); ?>css/data-table/bootstrap-editable.css">
+    <!-- style CSS
+      ============================================ -->
     <link rel="stylesheet" href="<?= base_url('assets/kiaalap/'); ?>style.css">
     <!-- responsive CSS
 		============================================ -->
