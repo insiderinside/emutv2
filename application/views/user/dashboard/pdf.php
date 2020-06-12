@@ -4,3 +4,4 @@
 <div id="example1"></div>
 <script src="<?= base_url('assets/kiaalap/'); ?>/js/pdfobject/pdfobject.min.js"></script>
 <script>PDFObject.embed("<?php echo $link; ?>", "#example1");</script>
+

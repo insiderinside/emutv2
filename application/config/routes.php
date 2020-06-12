@@ -50,11 +50,19 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 |		my-controller/my-method	-> my_controller/my_method
 */
 $route['default_controller'] = 'auth';
+
+//dashboar route
 $route['user/mutasi/tambah'] = 'user/dashboard/tambahmutasi';
+$route['user/mutasi/data'] = 'user/dashboard/data';
 $route['user/mutasi/simpan'] = 'user/dashboard/simpan';
 $route['user/mutasi/edit/(:num)'] = 'user/dashboard/editmutasi/$1';
 // $route['user/mutasi/hapus'] = 'user/dashboard/hapus';
 $route['user/mutasi/hapus/(:num)'] = 'user/dashboard/hapus/$1';
 $route['user/mutasi/edited/(:num)'] = 'user/dashboard/edit_simpan/$1';
+
+//profil route
+$route['user/profil'] = 'user/profil/index';
+$route['user/profil/edited'] = 'user/profil/edit';
+
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;

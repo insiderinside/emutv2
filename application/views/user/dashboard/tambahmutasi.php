@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
 		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/kiaalap/'); ?>img/favicon.ico">
     <!-- Google Fonts
 		============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
@@ -61,107 +61,97 @@
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <body>
+    <!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+    <div class="left-sidebar-pro">
+    <nav id="sidebar" class="">
+        <div class="sidebar-header">
+            <a href="<?= base_url(); ?>user/dashboard"><img class="main-logo" src="<?= base_url('assets/img/'); ?>head.png" style="width: 180px" height="40px" alt="" /></a>
+            <strong><a href="<?= base_url(); ?>user/dashboard"><img src="<?= base_url('assets/kiaalap/'); ?>img/logo/logosn.png" alt="" /></a></strong>
+        </div>
+        <div class="left-custom-menu-adp-wrap comment-scrollbar">
+            <nav class="sidebar-nav left-sidebar-menu-pro">
+                <ul class="metismenu" id="menu1">
+                    <li>
+                        <a class="" href="<?= base_url(); ?>user/dashboard">
+                            <span class="educate-icon educate-home icon-wrap"></span>
+                            <span class="mini-click-non">Beranda</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="<?= base_url(); ?>user/profil" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Profil</span></a>
+
+                    </li>
+                    <li>
+                        <a class="" href="<?= base_url(); ?>user/siswa" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Daftar Siswa</span></a>
+
+                    </li>
+                    <li>
+                        <a class="" href="<?= base_url(); ?>user/mutasi" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Riwayat Mutasi</span></a>
+
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </nav>
+</div>
 <div class="all-content-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="logo-pro">
-                        <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
-                    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="logo-pro">
+                <a href="<?= base_url(); ?>user/dashboard"><img class="main-logo" src="<?= base_url('assets/img/'); ?>head.png" style="width: 180px" height="40px" alt="" /></a>
                 </div>
             </div>
         </div>
-        <div class="header-advance-area">
-            <div class="header-top-area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="header-top-wraper">
-                                <div class="row">
-                                    <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
-                                        <div class="menu-switcher-pro">
-                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
-                                                <i class="educate-icon educate-nav"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
-                                        <div class="header-top-menu tabl-d-n">
-                                            <ul class="nav navbar-nav mai-top-nav">
-                                                <li class="nav-item"><a href="#" class="nav-link">Beranda</a>
-                                                </li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Informasi</a>
-                                                </li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Panduan Penggunaan</a>
-                                                </li>
-
-                                                <li class="nav-item"><a href="#" class="nav-link">Bantuan</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                                        <div class="header-right-info">
-                                            <ul class="nav navbar-nav mai-top-nav header-right-menu">
-                                                <li class="nav-item">
-                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-                                                        <img src="img/product/pro4.jpg" alt="" />
-                                                        <span class="admin-name"></span>
-                                                        <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
-                                                    </a>
-                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                        <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>My Account</a>
-                                                        </li>
-                                                        <li><a href="<?= base_url('user/dashboard/logout'); ?>"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
+    </div>
+    <div class="header-advance-area">
+        <div class="header-top-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="header-top-wraper">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                    <div class="menu-switcher-pro">
+                                        <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                            <i class="educate-icon educate-nav"></i>
+                                        </button>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="mobile-menu-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="mobile-menu">
-                                <nav id="dropdown">
-                                    <ul class="mobile-menu-nav">
-                                        
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="breadcome-area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="breadcome-list single-page-breadcome">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="breadcome-heading">
-                                            <form role="search" class="sr-input-func">
-                                                <input type="text" placeholder="Cari..." class="search-int form-control">
-                                                <a href="#"><i class="fa fa-search"></i></a>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <ul class="breadcome-menu">
-                                            <li><a href="#">Beranda</a> <span class="bread-slash">/</span>
+                                <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                                    <div class="header-top-menu tabl-d-n">
+                                        <ul class="nav navbar-nav mai-top-nav">
+                                            <li class="nav-item"><a href="<?= base_url(); ?>user/dashboard" class="nav-link">Beranda</a>
                                             </li>
-                                            <li><span class="bread-blod">Tambah Mutasi</span>
+                                            <li class="nav-item"><a href="#" class="nav-link">Informasi</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Panduan Penggunaan</a>
+                                            </li>
+
+                                            <li class="nav-item"><a href="#" class="nav-link">Bantuan</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                    <div class="header-right-info">
+                                        <ul class="nav navbar-nav mai-top-nav header-right-menu">
+                                            <li class="nav-item">
+                                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+                                                    <img src="<?= base_url('assets/img/'.$user['foto']); ?>" alt="" />
+                                                    <span class="admin-name"><?= $user['nama']; ?></span>
+                                                    <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
+                                                </a>
+                                                <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                                                    <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>My Account</a>
+                                                    </li>
+                                                    <li><a href="<?= base_url('user/dashboard/logout'); ?>"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                         </ul>
                                     </div>
@@ -172,7 +162,27 @@
                 </div>
             </div>
         </div>
-        <!-- Single pro tab review Start-->
+    <div class="mobile-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="mobile-menu">
+                        <nav id="dropdown">
+                            <ul class="mobile-menu-nav">
+                                <li><a href="<?= base_url(); ?>user/dashboard">Beranda</a></li>
+                                <li><a href="<?= base_url(); ?>user/profil">Profil</a></li>
+                                <li><a href="<?= base_url(); ?>user/siswa">Daftar Siswa</a></li>
+                                <li><a href="<?= base_url(); ?>user/mutasi">Riwayat Mutasi</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu end -->
+    <br>
+    <!-- Single pro tab review Start-->
         <div class="single-pro-review-area mt-t-30 mg-b-15">
             <div class="container-fluid">
                 <div class="row">
@@ -222,22 +232,13 @@
                                                                     <textarea name="alasan" placeholder="Alasan" required></textarea>
                                                                 </div>
                                                                 <div class="form-group">
-                                                                    <div class="file-upload-inner ts-forms">
-                                                                        <div class="input prepend-big-btn">
-                                                                            <div class="file-button">
-                                                                                Browse
-                                                                                <input name="berkas[]" type="file" onchange="document.getElementById('prepend-big-btn').value = this.value;">
-                                                                            </div>
-                                                                            <input name="berkas[]"" type="text" id="prepend-big-btn" placeholder="Upload Surat Mutasi" required>
-                                                                        </div>
-                                                                    </div>
+                                                                    <input name="asal_sekolah" type="text" class="form-control" placeholder="Asal Sekolah" required>
                                                                 </div>
+                                                                
                                                                 
                                                             </div>
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                                <div class="form-group">
-                                                                    <input name="asal_sekolah" type="text" class="form-control" placeholder="Asal Sekolah" required>
-                                                                </div>
+                                                                
                                                                 <div class="form-group res-mg-t-15">
                                                                     <textarea name="alamat_lengkap" placeholder="Alamat Lengkap" required></textarea>
                                                                 </div>
@@ -261,6 +262,17 @@
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <input name="provinsi_tujuan" type="text" class="form-control" placeholder="Provinsi Tujuan" required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                    <div class="file-upload-inner ts-forms">
+                                                                        <div class="input prepend-big-btn">
+                                                                            <div class="file-button">
+                                                                                Browse
+                                                                                <input name="berkas[]" type="file" onchange="document.getElementById('prepend-big-btn').value = this.value;">
+                                                                            </div>
+                                                                            <input name="berkas[]"" type="text" id="prepend-big-btn" placeholder="Upload Surat Mutasi" required>
+                                                                        </div>
+                                                                    </div>
                                                                 </div>
                                                                 <div class="form-group">
                                                                     <div class="file-upload-inner ts-forms">
@@ -307,6 +319,18 @@
                 </div>
             </div>
         </div>
+        <div class="footer-copyright-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2020. DINAS PENDIDIKAN DAN KEBUDAYAAN KAB.CILACAP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 
 <script src="<?= base_url('assets/kiaalap/'); ?>js/vendor/jquery-1.12.4.min.js"></script>
@@ -319,9 +343,6 @@
     <!-- price-slider JS
 		============================================ -->
     <script src="<?= base_url('assets/kiaalap/'); ?>js/jquery-price-slider.js"></script>
-    <!-- meanmenu JS
-		============================================ -->
-    <script src="<?= base_url('assets/kiaalap/'); ?>js/jquery.meanmenu.js"></script>
     <!-- owl.carousel JS
 		============================================ -->
     <script src="<?= base_url('assets/kiaalap/'); ?>js/owl.carousel.min.js"></script>
@@ -371,4 +392,25 @@
     <!-- main JS
 		============================================ -->
     <script src="<?= base_url('assets/kiaalap/'); ?>js/main.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/wow.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/jquery-price-slider.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/jquery.meanmenu.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/owl.carousel.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/jquery.sticky.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/jquery.scrollUp.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/scrollbar/mCustomScrollbar-active.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/metisMenu/metisMenu.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/metisMenu/metisMenu-active.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/sparkline/jquery.charts-sparkline.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/calendar/moment.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/calendar/fullcalendar.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/calendar/fullcalendar-active.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/plugins.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/main.js"></script>
+                            
+    </body>
+
+</html> 
     

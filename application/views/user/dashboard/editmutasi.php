@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
 		============================================ -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="<?= base_url('assets/kiaalap/'); ?>img/favicon.ico">
     <!-- Google Fonts
 		============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
@@ -62,107 +62,97 @@
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    <body>
+    <!--[if lt IE 8]>
+		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+    <div class="left-sidebar-pro">
+    <nav id="sidebar" class="">
+        <div class="sidebar-header">
+            <a href="<?= base_url(); ?>user/dashboard"><img class="main-logo" src="<?= base_url('assets/img/'); ?>head.png" style="width: 180px" height="40px" alt="" /></a>
+            <strong><a href="<?= base_url(); ?>user/dashboard"><img src="<?= base_url('assets/kiaalap/'); ?>img/logo/logosn.png" alt="" /></a></strong>
+        </div>
+        <div class="left-custom-menu-adp-wrap comment-scrollbar">
+            <nav class="sidebar-nav left-sidebar-menu-pro">
+                <ul class="metismenu" id="menu1">
+                    <li>
+                        <a class="" href="<?= base_url(); ?>user/dashboard">
+                            <span class="educate-icon educate-home icon-wrap"></span>
+                            <span class="mini-click-non">Beranda</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="" href="<?= base_url(); ?>user/profil" aria-expanded="false"><span class="educate-icon educate-professor icon-wrap"></span> <span class="mini-click-non">Profil</span></a>
+
+                    </li>
+                    <li>
+                        <a class="" href="<?= base_url(); ?>user/siswa" aria-expanded="false"><span class="educate-icon educate-student icon-wrap"></span> <span class="mini-click-non">Daftar Siswa</span></a>
+
+                    </li>
+                    <li>
+                        <a class="" href="<?= base_url(); ?>user/mutasi" aria-expanded="false"><span class="educate-icon educate-course icon-wrap"></span> <span class="mini-click-non">Riwayat Mutasi</span></a>
+
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+    </nav>
+</div>
 <div class="all-content-wrapper">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="logo-pro">
-                        <a href="index.html"><img class="main-logo" src="img/logo/logo.png" alt="" /></a>
-                    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="logo-pro">
+                <a href="<?= base_url(); ?>user/dashboard"><img class="main-logo" src="<?= base_url('assets/img/'); ?>head.png" style="width: 180px" height="40px" alt="" /></a>
                 </div>
             </div>
         </div>
-        <div class="header-advance-area">
-            <div class="header-top-area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="header-top-wraper">
-                                <div class="row">
-                                    <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
-                                        <div class="menu-switcher-pro">
-                                            <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
-                                                <i class="educate-icon educate-nav"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
-                                        <div class="header-top-menu tabl-d-n">
-                                            <ul class="nav navbar-nav mai-top-nav">
-                                                <li class="nav-item"><a href="#" class="nav-link">Beranda</a>
-                                                </li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Informasi</a>
-                                                </li>
-                                                <li class="nav-item"><a href="#" class="nav-link">Panduan Penggunaan</a>
-                                                </li>
-
-                                                <li class="nav-item"><a href="#" class="nav-link">Bantuan</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
-                                        <div class="header-right-info">
-                                            <ul class="nav navbar-nav mai-top-nav header-right-menu">
-                                                <li class="nav-item">
-                                                    <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
-                                                        <img src="img/product/pro4.jpg" alt="" />
-                                                        <span class="admin-name"></span>
-                                                        <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
-                                                    </a>
-                                                    <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
-                                                        <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>My Account</a>
-                                                        </li>
-                                                        <li><a href="<?= base_url('user/dashboard/logout'); ?>"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
-                                                        </li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </div>
+    </div>
+    <div class="header-advance-area">
+        <div class="header-top-area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="header-top-wraper">
+                            <div class="row">
+                                <div class="col-lg-1 col-md-0 col-sm-1 col-xs-12">
+                                    <div class="menu-switcher-pro">
+                                        <button type="button" id="sidebarCollapse" class="btn bar-button-pro header-drl-controller-btn btn-info navbar-btn">
+                                            <i class="educate-icon educate-nav"></i>
+                                        </button>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
-            <div class="mobile-menu-area">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="mobile-menu">
-                                <nav id="dropdown">
-                                    <ul class="mobile-menu-nav">
-                                        
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <div class="breadcome-area">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="breadcome-list single-page-breadcome">
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <div class="breadcome-heading">
-                                            <form role="search" class="sr-input-func">
-                                                <input type="text" placeholder="Cari..." class="search-int form-control">
-                                                <a href="#"><i class="fa fa-search"></i></a>
-                                            </form>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                        <ul class="breadcome-menu">
-                                            <li><a href="#">Beranda</a> <span class="bread-slash">/</span>
+                                <div class="col-lg-6 col-md-7 col-sm-6 col-xs-12">
+                                    <div class="header-top-menu tabl-d-n">
+                                        <ul class="nav navbar-nav mai-top-nav">
+                                            <li class="nav-item"><a href="<?= base_url(); ?>user/dashboard" class="nav-link">Beranda</a>
                                             </li>
-                                            <li><span class="bread-blod">Edit Mutasi</span>
+                                            <li class="nav-item"><a href="#" class="nav-link">Informasi</a>
+                                            </li>
+                                            <li class="nav-item"><a href="#" class="nav-link">Panduan Penggunaan</a>
+                                            </li>
+
+                                            <li class="nav-item"><a href="#" class="nav-link">Bantuan</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                                    <div class="header-right-info">
+                                        <ul class="nav navbar-nav mai-top-nav header-right-menu">
+                                            <li class="nav-item">
+                                                <a href="#" data-toggle="dropdown" role="button" aria-expanded="false" class="nav-link dropdown-toggle">
+                                                    <img src="<?= base_url('assets/img/'.$user['foto']); ?>" height="200" alt="" />
+                                                    <span class="admin-name"><?= $user['nama']; ?></span>
+                                                    <i class="fa fa-angle-down edu-icon edu-down-arrow"></i>
+                                                </a>
+                                                <ul role="menu" class="dropdown-header-top author-log dropdown-menu animated zoomIn">
+                                                    <li><a href="#"><span class="edu-icon edu-home-admin author-log-ic"></span>My Account</a>
+                                                    </li>
+                                                    <li><a href="<?= base_url('user/dashboard/logout'); ?>"><span class="edu-icon edu-locked author-log-ic"></span>Log Out</a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                         </ul>
                                     </div>
@@ -173,6 +163,26 @@
                 </div>
             </div>
         </div>
+    <div class="mobile-menu-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="mobile-menu">
+                        <nav id="dropdown">
+                            <ul class="mobile-menu-nav">
+                                <li><a href="<?= base_url(); ?>user/dashboard">Beranda</a></li>
+                                <li><a href="<?= base_url(); ?>user/profil">Profil</a></li>
+                                <li><a href="<?= base_url(); ?>user/siswa">Daftar Siswa</a></li>
+                                <li><a href="<?= base_url(); ?>user/mutasi">Riwayat Mutasi</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Mobile Menu end -->
+    <br>
         <!-- Single pro tab review Start-->
         <div class="single-pro-review-area mt-t-30 mg-b-15">
             <div class="container-fluid">
@@ -188,48 +198,88 @@
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="review-content-section">
                                                 <div id="dropzone1" class="pro-ad">
-                                                    <form action="<?php echo base_url('user/mutasi/edited/' . $mutasi->id_mutasi); ?>" method="post" enctype="multipart/form-data" class="dropzone dropzone-custom needsclick add-professors">
+                                                    <form action="<?= base_url('user/mutasi/edited/' . $mutasi->id_mutasi); ?>" method="post" enctype="multipart/form-data" class="dropzone dropzone-custom needsclick add-professors">
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="form-group">
                                                                 <label>Nama Lengkap</label>
-                                                                    <input name="nama_siswa" type="text" class="form-control" placeholder="Nama Lengkap" value="<?php echo $mutasi->nama_siswa ?>" required>
+                                                                    <input name="nama_siswa" type="text" class="form-control" placeholder="Nama Lengkap" value="<?= $mutasi->nama_siswa ?>" required>
                                                                 </div>
                                                                 <div class="form-group">
                                                                 <label>NIS</label>
-                                                                    <input name="nis" type="number" class="form-control" placeholder="NIS" value="<?php echo $mutasi->nis ?>" required>
+                                                                    <input name="nis" type="number" class="form-control" placeholder="NIS" value="<?= $mutasi->nis ?>" required>
                                                                 </div>
                                                                 <div class="form-group">
                                                                 <label>NISN</label>
-                                                                    <input name="nisn" type="number" class="form-control" placeholder="NISN" value="<?php echo $mutasi->nisn ?>" required>
+                                                                    <input name="nisn" type="number" class="form-control" placeholder="NISN" value="<?= $mutasi->nisn ?>" required>
                                                                 </div>
                                                                 <div class="form-group">
                                                                 <label>Jenis Kelamin</label>
                                                                     <select name="jenis_kelamin" class="form-control" required>
-																		<option value="<?php echo $mutasi->jenis_kelamin ?>" selected=""><?php echo $mutasi->jenis_kelamin ?></option>
+																		<option value="<?= $mutasi->jenis_kelamin ?>" selected=""><?= $mutasi->jenis_kelamin ?></option>
 																		<option value="Laki - Laki">Laki - Laki</option>
 																		<option value="Perempuan">Perempuan</option>
 																	</select>
                                                                 </div>
                                                                 <div class="form-group">
                                                                 <label>Tempat Lahir</label>
-                                                                    <input name="tempat_lahir" type="text" class="form-control" placeholder="Tempat Lahir" value="<?php echo $mutasi->tempat_lahir ?>" required>
+                                                                    <input name="tempat_lahir" type="text" class="form-control" placeholder="Tempat Lahir" value="<?= $mutasi->tempat_lahir ?>" required>
                                                                 </div>
                                                                 <div class="form-group">
                                                                 <label>Tanggal Lahir</label>
-                                                                    <input name="tanggal_lahir" id="finish" type="text" class="form-control" value="<?php echo $mutasi->tgl_lahir ?>" placeholder="Tanggal Lahir">
+                                                                    <input name="tanggal_lahir" id="finish" type="text" class="form-control" value="<?= $mutasi->tgl_lahir ?>" placeholder="Tanggal Lahir">
                                                                 </div>
                                                                 <div class="form-group">
                                                                 <label>Nama Orang Tua</label>
-                                                                    <input name="nama_orangtua" type="text" class="form-control" placeholder="Nama Orang Tua" value="<?php echo $mutasi->orangtua ?>" required>
+                                                                    <input name="nama_orangtua" type="text" class="form-control" placeholder="Nama Orang Tua" value="<?= $mutasi->orangtua ?>" required>
                                                                 </div>
                                                                 <div class="form-group">
                                                                 <label>Kelas</label>
-                                                                    <input name="kelas" type="text" class="form-control" placeholder="Kelas" value="<?php echo $mutasi->kelas ?>" required>
+                                                                    <input name="kelas" type="text" class="form-control" placeholder="Kelas" value="<?= $mutasi->kelas ?>" required>
                                                                 </div>
                                                                 <div class="form-group res-mg-t-15">
                                                                 <label>Alasan</label>
-                                                                    <textarea name="alasan" placeholder="Alasan" required><?php echo $mutasi->alasan ?></textarea>
+                                                                    <textarea name="alasan" placeholder="Alasan" required><?= $mutasi->alasan ?></textarea>
+                                                                </div>
+                                                                <div class="form-group res-mg-t-15">
+                                                                <label>Alamat Lengkap</label>
+                                                                    <textarea name="alamat_lengkap" placeholder="Alamat Lengkap" required><?= $mutasi->alamat_lengkap ?></textarea>
+                                                                </div>
+                                                                
+                                                            </div>
+                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                                                <div class="form-group">
+                                                                <label>Asal Sekolah</label>
+                                                                    <input name="asal_sekolah" type="text" class="form-control" placeholder="Asal Sekolah" value="<?= $mutasi->asal_sekolah ?>" required>
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+                                                                <label>Desa / Kelurahan</label>
+                                                                    <input name="kelurahan" type="text" class="form-control" placeholder="Desa / Kelurahan" value="<?= $mutasi->kelurahan ?>" required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label>Kecamatan</label>
+                                                                    <input name="kecamatan" type="text" class="form-control" placeholder="Kecamatan" value="<?= $mutasi->kecamatan ?>" required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label>Kabupaten / Kota</label>
+                                                                    <input name="kabupaten" type="text" class="form-control" placeholder="Kabupaten / Kota" value="<?= $mutasi->kabupaten ?>" required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label>Pindah / Lanjut</label>
+                                                                    <input name="pindah_lanjut" type="text" class="form-control" placeholder="Pindah / Lanjut" value="<?= $mutasi->pindah_lanjut ?>" required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label>Tujaun Sekolah</label>
+                                                                    <input name="tujuan_sekolah" type="text" class="form-control" placeholder="Tujuan Sekolah" value="<?= $mutasi->tujuan_sekolah ?>" required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label>Kabupaten Tujuan</label>
+                                                                    <input name="kabupaten_tujuan" type="text" class="form-control" placeholder="Kabupaten Tujuan" value="<?= $mutasi->tujuan_kabupaten ?>" required>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label>Provinsi Tujuan</label>
+                                                                    <input name="provinsi_tujuan" type="text" class="form-control" placeholder="Provinsi Tujuan" value="<?= $mutasi->tujuan_provinsi ?>" required>
                                                                 </div>
                                                                 <div class="form-group">
                                                                 <label>Upload Surat Mutasi</label>
@@ -239,73 +289,11 @@
                                                                                 Browse
                                                                                 <input name="berkas[]" type="file" onchange="document.getElementById('prepend-big-btn').value = this.value;">
                                                                             </div>
-                                                                            <input name="berkas[]"" type="text" id="prepend-big-btn" placeholder="Upload Surat Mutasi" value="<?php echo $mutasi->upload_surat_mutasi ?>" required>
+                                                                            <input name="suratmutasi" type="text" id="prepend-big-btn" placeholder="Upload Surat Mutasi" value="<?= $mutasi->upload_surat_mutasi ?>" required>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="form-group">
-                                                                <label>Preview Upload</label>
-                                                                    <div class="modal-area-button">
-                                                                        <a class="Primary mg-b-10" id="btnShow" href="#" data-link="<?= base_url('assets/lampiran/'); ?><?php echo $mutasi->upload_surat_mutasi ?>">Surat Mutasi</a>
-                                                                        <a class="Primary mg-b-10" id="btnShow1" href="#" data-link="<?= base_url('assets/lampiran/'); ?><?php echo $mutasi->upload_surat_dapodik ?>">Surat Dapodik</a>
-                                                                        <a class="Primary mg-b-10" id="btnShow2" href="#" data-link="<?= base_url('assets/lampiran/'); ?><?php echo $mutasi->upload_akte_kk ?>">Akte dan KK</a>
-                                                                            
-                                                                    </div>
-
-                                                                    <div id="myModal" class="modal modal-edu-general default-popup-PrimaryModal fade" role="dialog">
-                                                                        <div class="modal-dialog" style="width:1000px;">
-                                                                            <div class="modal-content">
-                                                                                <div class="modal-header header-color-modal bg-color-1">
-                                                                                    <h4 class="modal-title">Preview PDF</h4>
-                                                                                    <div class="modal-close-area modal-close-df">
-                                                                                        <a class="close" data-dismiss="modal" href="#"><i class="fa fa-close"></i></a>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="modal-body">
-
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-                                                                <div class="form-group">
-                                                                <label>Asal Sekolah</label>
-                                                                    <input name="asal_sekolah" type="text" class="form-control" placeholder="Asal Sekolah" value="<?php echo $mutasi->asal_sekolah ?>" required>
-                                                                </div>
-                                                                <div class="form-group res-mg-t-15">
-                                                                <label>Alamat Lengkap</label>
-                                                                    <textarea name="alamat_lengkap" placeholder="Alamat Lengkap" required><?php echo $mutasi->alamat_lengkap ?></textarea>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                <label>Desa / Kelurahan</label>
-                                                                    <input name="kelurahan" type="text" class="form-control" placeholder="Desa / Kelurahan" value="<?php echo $mutasi->kelurahan ?>" required>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                <label>Kecamatan</label>
-                                                                    <input name="kecamatan" type="text" class="form-control" placeholder="Kecamatan" value="<?php echo $mutasi->kecamatan ?>" required>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                <label>Kabupaten / Kota</label>
-                                                                    <input name="kabupaten" type="text" class="form-control" placeholder="Kabupaten / Kota" value="<?php echo $mutasi->kabupaten ?>" required>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                <label>Pindah / Lanjut</label>
-                                                                    <input name="pindah_lanjut" type="text" class="form-control" placeholder="Pindah / Lanjut" value="<?php echo $mutasi->pindah_lanjut ?>" required>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                <label>Tujaun Sekolah</label>
-                                                                    <input name="tujuan_sekolah" type="text" class="form-control" placeholder="Tujuan Sekolah" value="<?php echo $mutasi->tujuan_sekolah ?>" required>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                <label>Kabupaten Tujuan</label>
-                                                                    <input name="kabupaten_tujuan" type="text" class="form-control" placeholder="Kabupaten Tujuan" value="<?php echo $mutasi->tujuan_kabupaten ?>" required>
-                                                                </div>
-                                                                <div class="form-group">
-                                                                <label>Provinsi Tujuan</label>
-                                                                    <input name="provinsi_tujuan" type="text" class="form-control" placeholder="Provinsi Tujuan" value="<?php echo $mutasi->tujuan_provinsi ?>" required>
-                                                                </div>
+                                                                
                                                                 <div class="form-group">
                                                                 <label>Upload Surat Dapodik</label>
                                                                     <div class="file-upload-inner ts-forms">
@@ -314,7 +302,7 @@
                                                                                 Browse
                                                                                 <input name="berkas[]" type="file" onchange="document.getElementById('prepend-big-btnn').value = this.value;">
                                                                             </div>
-                                                                            <input name="berkas[]" type="text" id="prepend-big-btnn" placeholder="Upload Surat Dapodik" value="<?php echo $mutasi->upload_surat_dapodik ?>" required>
+                                                                            <input name="suratdapodik" type="text" id="prepend-big-btnn" placeholder="Upload Surat Dapodik" value="<?= $mutasi->upload_surat_dapodik ?>" required>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -326,7 +314,32 @@
                                                                                 Browse
                                                                                 <input name="berkas[]" type="file" onchange="document.getElementById('prepend-big-btnnn').value = this.value;">
                                                                             </div>
-                                                                            <input name="berkas[]" type="text" id="prepend-big-btnnn" placeholder="Upload Akte Dan KK" value="<?php echo $mutasi->upload_akte_kk ?>" required>
+                                                                            <input name="aktekk" type="text" id="prepend-big-btnnn" placeholder="Upload Akte Dan KK" value="<?= $mutasi->upload_akte_kk ?>" required>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="form-group">
+                                                                <label>Preview Upload</label>
+                                                                    <div class="modal-area-button">
+                                                                        <a class="Primary mg-b-10" id="btnShow" href="#" data-link="<?= base_url('assets/lampiran/'); ?><?= $mutasi->upload_surat_mutasi ?>">Surat Mutasi</a>
+                                                                        <a class="Primary mg-b-10" id="btnShow1" href="#" data-link="<?= base_url('assets/lampiran/'); ?><?= $mutasi->upload_surat_dapodik ?>">Surat Dapodik</a>
+                                                                        <a class="Primary mg-b-10" id="btnShow2" href="#" data-link="<?= base_url('assets/lampiran/'); ?><?= $mutasi->upload_akte_kk ?>">Akte dan KK</a>
+                                                                            
+                                                                    </div>
+
+                                                                    <div id="myModal" class="modal modal-edu-general default-popup-PrimaryModal fade" role="dialog">
+                                                                        <div class="modal-dialog mw-100 w-75">
+                                                                            <div class="modal-content">
+                                                                                <div class="modal-header header-color-modal bg-color-1">
+                                                                                    <h4 class="modal-title">Preview PDF</h4>
+                                                                                    <div class="modal-close-area modal-close-df">
+                                                                                        <a class="close" data-dismiss="modal" href="#"><i class="fa fa-close"></i></a>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="modal-body">
+
+                                                                                </div>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -353,7 +366,18 @@
                 </div>
             </div>
         </div>
-
+        <div class="footer-copyright-area">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="footer-copy-right">
+                        <p>Copyright © 2020. DINAS PENDIDIKAN DAN KEBUDAYAAN KAB.CILACAP</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="<?= base_url('assets/kiaalap/'); ?>js/vendor/jquery-1.12.4.min.js"></script>
 
@@ -413,9 +437,6 @@ $(function () {
     <!-- price-slider JS
 		============================================ -->
     <script src="<?= base_url('assets/kiaalap/'); ?>js/jquery-price-slider.js"></script>
-    <!-- meanmenu JS
-		============================================ -->
-    <script src="<?= base_url('assets/kiaalap/'); ?>js/jquery.meanmenu.js"></script>
     <!-- owl.carousel JS
 		============================================ -->
     <script src="<?= base_url('assets/kiaalap/'); ?>js/owl.carousel.min.js"></script>
@@ -464,4 +485,24 @@ $(function () {
     <!-- main JS
 		============================================ -->
     <script src="<?= base_url('assets/kiaalap/'); ?>js/main.js"></script>
-    
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/wow.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/jquery-price-slider.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/jquery.meanmenu.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/owl.carousel.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/jquery.sticky.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/jquery.scrollUp.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/scrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/scrollbar/mCustomScrollbar-active.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/metisMenu/metisMenu.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/metisMenu/metisMenu-active.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/sparkline/jquery.sparkline.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/sparkline/jquery.charts-sparkline.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/calendar/moment.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/calendar/fullcalendar.min.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/calendar/fullcalendar-active.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/plugins.js"></script>
+    <script src="<?= base_url('assets/kiaalap/'); ?>js/main.js"></script>
+                            
+    </body>
+
+</html> 
