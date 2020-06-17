@@ -58,6 +58,7 @@
     <!-- responsive CSS
 		============================================ -->
     <link rel="stylesheet" href="<?= base_url('assets/kiaalap/'); ?>css/responsive.css">
+    <link rel="stylesheet" href="<?= base_url('assets/kiaalap/'); ?>css/modals.css">
     <!-- modernizr JS
 		============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -268,7 +269,7 @@
                                                                         <div class="input prepend-big-btn">
                                                                             <div class="file-button">
                                                                                 Browse
-                                                                                <input name="berkas[]" type="file" onchange="document.getElementById('prepend-big-btn').value = this.value;">
+                                                                                <input name="berkas[]" type="file" required onchange="document.getElementById('prepend-big-btn').value = this.value;">
                                                                             </div>
                                                                             <input name="berkas[]"" type="text" id="prepend-big-btn" placeholder="Upload Surat Mutasi" required>
                                                                         </div>
@@ -279,7 +280,7 @@
                                                                         <div class="input prepend-big-btn">
                                                                             <div class="file-button">
                                                                                 Browse
-                                                                                <input name="berkas[]" type="file" onchange="document.getElementById('prepend-big-btnn').value = this.value;">
+                                                                                <input name="berkas[]" type="file" required onchange="document.getElementById('prepend-big-btnn').value = this.value;">
                                                                             </div>
                                                                             <input name="berkas[]" type="text" id="prepend-big-btnn" placeholder="Upload Surat Dapodik" required>
                                                                         </div>
@@ -290,7 +291,7 @@
                                                                         <div class="input prepend-big-btn">
                                                                             <div class="file-button">
                                                                                 Browse
-                                                                                <input name="berkas[]" type="file" onchange="document.getElementById('prepend-big-btnnn').value = this.value;">
+                                                                                <input name="berkas[]" type="file" required onchange="document.getElementById('prepend-big-btnnn').value = this.value;">
                                                                             </div>
                                                                             <input name="berkas[]" type="text" id="prepend-big-btnnn" placeholder="Upload Akte Dan KK" required>
                                                                         </div>
@@ -298,16 +299,37 @@
                                                                 </div>
                                                             </div>
                                                         </div>
+                                                        <div id="WarningModal" class="modal modal-edu-general Customwidth-popup-WarningModal fade" role="dialog">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-close-area modal-close-df">
+                                                                        <a class="close" data-dismiss="modal" href="#"><i class="fa fa-close"></i></a>
+                                                                    </div>
+                                                                    <div class="modal-body">
+                                                                        <span class="educate-icon educate-warning modal-check-pro information-icon-pro"></span>
+                                                                        <h2>Warning!</h2>
+                                                                        <p>Apakah anda yakin akan menambahkan data mutasi ini ?</p>
+                                                                    </div>
+                                                                    <div class="modal-footer warning-md">
+                                                                        <center>
+                                                                        <button class="btn btn-custon-four btn-primary" data-dismiss="modal" href="#">Cancel</button>
+                                                                        <button class="btn btn-custon-four btn-primary" id="TambahMutasi" type="submit">Process</button>
+                                                                        </center>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        </form>
                                                         
                                                         <div class="row">
                                                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                 <div class="login-horizental cancel-wp pull-right form-bc-ele">
                                                                     <a href="<?= base_url(); ?>user/dashboard" class="btn btn-white">Batal</a>
-                                                                    <button class="btn btn-sm btn-primary login-submit-cs" type="submit">Simpan</button>
+                                                                    <button class="btn btn-sm btn-primary login-submit-cs" id="OpenModal" type="submit" onclick="OpenWarning()">Simpan</button>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </form>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -334,6 +356,16 @@
 
 
 <script src="<?= base_url('assets/kiaalap/'); ?>js/vendor/jquery-1.12.4.min.js"></script>
+<script>
+function OpenWarning() {
+    $('#WarningModal').modal('show'); 
+    $(document).ready(function(){
+        $("#TambahMutasi").click(function(){
+            $('#WarningModal').modal('hide');
+        }); 
+    });
+}
+</script>   
 <!-- bootstrap JS
 		============================================ -->
 <script src="<?= base_url('assets/kiaalap/'); ?>js/bootstrap.min.js"></script>
